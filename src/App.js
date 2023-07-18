@@ -221,31 +221,28 @@ const App = () => {
 						Путешествуйте по всему миру и общайтесь с людьми из разных стран, обогощая свой опыт и делая путешествие незабываемым!
 					</Alert>
 				</Col>
-				<Row>
-					<a className="btn btn-primary" variant="primary" href="#">Начать учить <ArrowRight /></a>
-				</Row>
 			</Row>
+			<a className="btn btn-primary" variant="primary" href="#">Начать учить <ArrowRight /></a>
 
-			
+			{/* Form 1 (without plan) */}
+			<Row className='mt-5'>
+				<h2><Accent>Оставьте заявку</Accent>, мы с Вами свяжемся </h2>
+				<iframe
+					src="https://tally.so/embed/mRd6qQ?hideTitle=1&transparentBackground=1"
+					loading="lazy"
+					width="100%"
+					id='contact'
+					height="200px"
+					frameborder="0"
+					marginheight="0"
+					marginwidth="0"
+					scrollBar="hidden"
+					title="Оставьте заявку, мы с Вами свяжемся"
+				/>
+			</Row>
 		</Container>
 
 			<Root>
-
-				<VerticalDiv className="centered">
-					<H2><Accent>Оставьте заявку</Accent>, мы с Вами свяжемся </H2>				
-					<iframe
-						src="https://tally.so/embed/mRd6qQ?hideTitle=1&transparentBackground=1"
-						loading="lazy"
-						width="100%"
-						id='contact'
-						height="200px"
-						frameborder="0"
-						marginheight="0"
-						marginwidth="0"
-						scrollBar="hidden"
-						title="Оставьте заявку, мы с Вами свяжемся"
-					/>
-				</VerticalDiv>
 
 				<VerticalDiv className='centered' id='plans'>
 					<P className="centered">Хотите начать?</P>
