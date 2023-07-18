@@ -222,7 +222,6 @@ const App = () => {
 					</Alert>
 				</Col>
 			</Row>
-			<a className="btn btn-primary" variant="primary" href="#">Начать учить <ArrowRight /></a>
 
 			{/* Form 1 (without plan) */}
 			<Row className='mt-5'>
@@ -239,6 +238,27 @@ const App = () => {
 					scrollBar="hidden"
 					title="Оставьте заявку, мы с Вами свяжемся"
 				/>
+			</Row>
+
+			<Row className='mt-5'>
+				<p className='text-muted mb-0'>Хотите начать?</p>
+				<h2><Accent>Выберите</Accent> тариф</h2>
+				<p>Приобретайте наборы занятий! Рекомендуем для полноценного обучения</p>
+				{/* Paste Slider here -> */}
+				{/* <Card className='p-0'>
+					<Card.Header as="h5"><Badge bg='danger'>самый выгодный</Badge></Card.Header>
+					<Card.Body>
+						<Card.Title>Практикант</Card.Title>
+						<Card.Text className='mb-0'>
+							По одному занятияю из каждой категории: консультация, игровое, развлекательное
+						</Card.Text>
+						<Card.Text>
+						+ одно занятие на выбор
+						</Card.Text>
+						<a className="btn btn-dark" href="#">Купить за 2290₽/нед</a>
+					</Card.Body>
+					<Card.Footer>Подходит для учеников, которые желают больше практиковаться!</Card.Footer>
+				</Card> */}
 			</Row>
 		</Container>
 
