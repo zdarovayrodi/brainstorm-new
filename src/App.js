@@ -21,6 +21,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Row, Col, Alert, Badge, Image, Card, Carousel } from 'react-bootstrap';
 
 import ReactCardCarousel from "react-card-carousel";
+import { BiConversation, BiSearchAlt } from 'react-icons/bi';
+import { PiPopcornBold } from 'react-icons/pi';
+import { BsFillRocketTakeoffFill, BsPuzzle } from 'react-icons/bs';
+import { FaCity, FaTelegramPlane, FaUniversity } from 'react-icons/fa';
+import { MdGroup } from 'react-icons/md';
+import { GiBookshelf } from 'react-icons/gi';
 
 
 const App = () => {
@@ -103,8 +109,8 @@ const App = () => {
 			<Row className="mt-5 d-flex flex-column align-items-center" id='lessons'>
 				<Col>
 					<h2>Виды занятий</h2>
-					<div style={CONTAINER_STYLE()}>
-						<ReactCardCarousel autoplay={false}>
+					{/* <div style={CONTAINER_STYLE()}> */}
+						{/* <ReactCardCarousel autoplay={false}>
 							<Card>
 								<Card.Img variant="top" src={GamingBg} />
 								<Card.Body>
@@ -138,8 +144,8 @@ const App = () => {
 									<a className="btn btn-dark" href="#">649₽</a>
 								</Card.Body>
 							</Card>
-						</ReactCardCarousel>
-					</div>
+						</ReactCardCarousel> */}
+					{/* </div> */}
 				</Col>
 			</Row>
 
@@ -165,91 +171,65 @@ const App = () => {
 					<a className="btn btn-primary" variant="primary" href="#">Записаться <ArrowRight /></a>
 				</Col>
 			</Row>
+
+			{/* learn */}
+			<Row className="d-flex flex-column flex-md-row align-items-center mt-5" id='learn'>
+				<h2><Accent>Зачем</Accent> учить английский язык?</h2>
+				<Col>
+					<h3>Это <Accent>интересно</Accent>!</h3>
+					<Alert variant='primary'>
+						<Alert.Heading><BiConversation /> Играйте в любую игру с носителем</Alert.Heading>
+						Наслаждайтесь игрой, общайтесь с носителем английского языка, погружаясь в языковую среду и улучшая свои навыки
+					</Alert>
+					<Alert variant='primary'>
+						<Alert.Heading><PiPopcornBold /> Смотрите фильмы, сериалы с носителем</Alert.Heading>
+						На английском языке вместе с преподавателем, разбирая важные лексические и грамматические моменты
+					</Alert>
+					<Alert variant='primary'>
+						<Alert.Heading><BsPuzzle /> Решайте головомки, проходите квесты</Alert.Heading>
+						На английском языке, развивая логическое и творческое мышление
+					</Alert>
+					<Alert variant='primary'>
+						<Alert.Heading><FaTelegramPlane /> Общение в чате онлайн</Alert.Heading>
+						Общайтесь с преподавателем 24/7, практикуя навыки современного онлайн-общения
+					</Alert>
+					<Alert variant='primary'>
+						<Alert.Heading><MdGroup /> Групповые игровые занятия</Alert.Heading>
+						Присоединяйтесь к групповым игровым занятиям, знакомьтесь с единомышленниками и вдохновляйте друг друга!
+					</Alert>
+				</Col>
+				<Col>
+					<h3>Это <Accent>полезно</Accent>!</h3>
+					<Alert variant='primary'>
+						<Alert.Heading><FaUniversity /> Расширяет границы</Alert.Heading>
+						Учите самый важный язык в образовательной сфере, владение им значительно повышает шансы на поступление в ВУЗы всего мира!
+					</Alert>
+					<Alert variant='primary'>
+						<Alert.Heading><BiSearchAlt /> Мировой стандарт</Alert.Heading>
+						Международный язык коммуникации помогает легко и быстро находить нужную информацию в сети, позволяет обращаться к первоисточниам
+					</Alert>
+					<Alert variant='primary'>
+						<Alert.Heading><GiBookshelf /> Богатая культура</Alert.Heading>
+						Получите доступ к богатой англоязычной культуре, литературе. кино и музыке
+					</Alert>
+					<Alert variant='primary'>
+						<Alert.Heading><BsFillRocketTakeoffFill /> Карьерный рост</Alert.Heading>
+						Знание английского языка открывает множество возможностей для развития карьеры
+					</Alert>
+					<Alert variant='primary'>
+						<Alert.Heading><FaCity /> Возможность путешествовать</Alert.Heading>
+						Путешествуйте по всему миру и общайтесь с людьми из разных стран, обогощая свой опыт и делая путешествие незабываемым!
+					</Alert>
+				</Col>
+				<Row>
+					<a className="btn btn-primary" variant="primary" href="#">Начать учить <ArrowRight /></a>
+				</Row>
+			</Row>
+
+			
 		</Container>
 
 			<Root>
-				
-				<VerticalDiv className='centered' id='learn'>
-					<HorizontalDiv>
-						{/* <Illustration backgroundImg={require(OnlineLessonIllustration)} /> */}
-						<VerticalDiv>
-							<H2><Accent>Зачем</Accent> учить английский язык?</H2>
-								<WhyLearnWrapper>
-									<WhyLearnDiv>
-										<H3>Это <Accent>интересно</Accent>!</H3>
-										<WhyLearnBoxWrapper>
-											<HighlightBox className="withIcon">
-												<VerticalWrapper>
-													<BaldName><Conversation />Играйте в любую игру с носителем</BaldName>
-													<HighlightBoxContent>Наслаждайтесь игрой, общайтесь с носителем английского языка, погружаясь в языковую среду и улучшая свои навыки</HighlightBoxContent>
-												</VerticalWrapper>
-											</HighlightBox>
-											<HighlightBox className="withIcon">
-												<VerticalWrapper>
-													<BaldName><Popcorn />Смотрите фильмы, сериалы с носителем</BaldName>
-													<HighlightBoxContent>На английском языке вместе с преподавателем, разбирая важные лексические и грамматические моменты</HighlightBoxContent>
-												</VerticalWrapper>
-											</HighlightBox>
-											<HighlightBox className="withIcon">
-												<VerticalWrapper>
-													<BaldName><Puzzle /> Решайте головомки, проходите квесты</BaldName>
-													<HighlightBoxContent>На английском языке, развивая логическое и творческое мышление</HighlightBoxContent>
-												</VerticalWrapper>
-											</HighlightBox>
-											<HighlightBox className="withIcon">
-												<VerticalWrapper>
-													<BaldName><TelegramPlane />Общение в чате онлайн</BaldName>
-													<HighlightBoxContent>Общайтесь с преподавателем 24/7, практикуя навыки современного онлайн-общения</HighlightBoxContent>
-												</VerticalWrapper>
-											</HighlightBox>
-											<HighlightBox className="withIcon">
-												<VerticalWrapper>
-													<BaldName><Group />Групповые игровые занятия</BaldName>
-													<HighlightBoxContent>Присоединяйтесь к групповым игровым занятиям, знакомьтесь с единомышленниками и вдохновляйте друг друга!</HighlightBoxContent>
-												</VerticalWrapper>
-											</HighlightBox>
-										</WhyLearnBoxWrapper>
-									</WhyLearnDiv>
-									<WhyLearnDiv>
-										<H3>Это <Accent>полезно</Accent>!</H3>
-										<WhyLearnBoxWrapper>
-											<HighlightBox className="withIcon">
-												<VerticalWrapper>
-													<BaldName><UniversitySmall />Расширяет границы</BaldName>
-													<HighlightBoxContent>Учите самый важный язык в образовательной сфере, владение им значительно повышает шансы на поступление в ВУЗы всего мира!</HighlightBoxContent>
-												</VerticalWrapper>
-											</HighlightBox>
-											<HighlightBox className="withIcon">
-												<VerticalWrapper>
-													<BaldName><Search />Мировой стандарт</BaldName>
-													<HighlightBoxContent>Международный язык коммуникации помогает легко и быстро находить нужную информацию в сети, позволяет обращаться к первоисточниам</HighlightBoxContent>
-												</VerticalWrapper>
-											</HighlightBox>
-											<HighlightBox className="withIcon">
-												<VerticalWrapper>
-													<BaldName><Bookshelf />Богатая культура</BaldName>
-													<HighlightBoxContent>Получите доступ к богатой англоязычной культуре, литературе. кино и музыке</HighlightBoxContent>
-												</VerticalWrapper>
-											</HighlightBox>
-											<HighlightBox className="withIcon">
-												<VerticalWrapper>
-													<BaldName><Rocket />Карьерный рост</BaldName>
-													<HighlightBoxContent>Знание английского языка открывает множество возможностей для развития карьеры</HighlightBoxContent>
-												</VerticalWrapper>
-											</HighlightBox>
-											<HighlightBox>
-												<VerticalWrapper>
-													<BaldName><City /> Возможность путешествовать</BaldName>
-													<HighlightBoxContent>Путешествуйте по всему миру и общайтесь с людьми из разных стран, обогощая свой опыт и делая путешествие незабываемым!</HighlightBoxContent>
-												</VerticalWrapper>
-											</HighlightBox>
-										</WhyLearnBoxWrapper>
-									</WhyLearnDiv>
-								</WhyLearnWrapper>
-						</VerticalDiv>
-					</HorizontalDiv>
-					<Button className="primary" to="contact" smooth={true} duration={1000} spy={true} exact='true' offset={-300}>Начать учить<ArrowRight /></Button>
-				</VerticalDiv>
 
 				<VerticalDiv className="centered">
 					<H2><Accent>Оставьте заявку</Accent>, мы с Вами свяжемся </H2>				

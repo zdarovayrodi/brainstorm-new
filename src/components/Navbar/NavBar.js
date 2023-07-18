@@ -16,10 +16,10 @@ function NavBar() {
                 <Nav.Link href="#main">Главная</Nav.Link>
                 <Nav.Link href="#whywe">Преимущества</Nav.Link>
                 <Nav.Link href="#lessons">Виды занятий</Nav.Link>
-                <Nav.Link href="#">Бесплатное занятие</Nav.Link>
-                <Nav.Link href="#">Зачем учить?</Nav.Link>
-                <Nav.Link href="#">Стоимость</Nav.Link>
-                <Nav.Link href="#">Контакты</Nav.Link>
+                <Nav.Link href="#freelesson">Бесплатное занятие</Nav.Link>
+                <Nav.Link href="#learn">Зачем учить?</Nav.Link>
+                <Nav.Link href="#plans">Наборы</Nav.Link>
+                <Nav.Link href="#footer">Контакты</Nav.Link>
             </Nav>
             <Nav>
                 <Button variant="outline-primary">Записаться</Button>

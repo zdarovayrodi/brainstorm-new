@@ -46,10 +46,6 @@ export const ArrowRight = styled(FaArrowRight)`
 `
 
 export const Conversation = styled(BiConversation)`
-    font-size: 24px;
-    color: black;
-    position: absolute;
-    transform: translate(-30px,0);
 `
 
 export const Popcorn = styled(PiPopcornBold)`
