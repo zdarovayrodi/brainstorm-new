@@ -27,10 +27,10 @@ const App = () => {
 	function CONTAINER_STYLE() {
 		return {
 		  position: "relative",
-		  // height: "100vh",
-		  marginTop: "230px",
+		  height: "500px",
 		  width: "38rem",
-		  maxWidth: "min(38rem, 100%)",
+		//   minWidth: "18rem",
+		//   maxWidth: "min(38rem, 100%)",
 		  display: "flex",
 		  flex: 1,
 		  justifyContent: "center",
@@ -87,7 +87,7 @@ const App = () => {
 			</Row>
 
 			{/* Why we section */}
-			<Row className="align-items-center" id='whywe'>
+			<Row className="d-flex flex-column flex-md-row align-items-center mt-5" id='whywe'>
 				{/* img */}
 				<Col sm={6}>
 					<Image src={GamerIllustration} fluid />
@@ -98,9 +98,9 @@ const App = () => {
 					<p>Носители языка помогут Вашему ребенку выучить новые слова и усовершенствовать свою грамматику в <Accent>интерактивной форме</Accent>.</p>
 				</Col>
 			</Row>
-
-			<Row className="" id='lessons'>
-						
+				
+			{/* Lessons */}
+			<Row className="mt-5 d-flex flex-column align-items-center" id='lessons'>
 				<Col>
 					<h2>Виды занятий</h2>
 					<div style={CONTAINER_STYLE()}>
@@ -142,36 +142,32 @@ const App = () => {
 					</div>
 				</Col>
 			</Row>
+
+			{/* Free lesson */}
+			<Row className="align-items-center mt-5" id='freelesson'>
+				<Col>
+					<h2><Accent>Бесплатное вводное</Accent> занятие</h2>
+					<Alert variant='primary'>
+						Познакомимся с преподавателем
+					</Alert>
+					<Alert variant='primary'>
+						Оценим уровень знаний
+					</Alert>
+					<Alert variant='primary'>
+						Составим пресональную программу обучения
+					</Alert>
+					<Alert variant='primary'>
+						Выучим 10 новых слов
+					</Alert>
+					<Alert variant='warning'>
+						Полностью бесплатно. Да, даже если решите не заниматься с нами. Без звездочек и скрытых условий.
+					</Alert>
+					<a className="btn btn-primary" variant="primary" href="#">Записаться <ArrowRight /></a>
+				</Col>
+			</Row>
 		</Container>
 
 			<Root>
-
-				<VerticalDiv className='centered' id='freelesson'>
-					<HorizontalDiv>
-						<Illustration backgroundImg={OnlineLessonIllustration} />
-						<VerticalDiv>
-							<H2><Accent>Бесплатное вводное</Accent> занятие</H2>
-							<HighlightBoxWrapper>
-								<HighlightBox>
-									<HighlightBoxContent>Познакомимся с преподавателем</HighlightBoxContent>
-								</HighlightBox>
-								<HighlightBox>
-									<HighlightBoxContent>Оценим уровень знаний</HighlightBoxContent>
-								</HighlightBox>
-								<HighlightBox>
-									<HighlightBoxContent>Составим пресональную программу обучения</HighlightBoxContent>
-								</HighlightBox>
-								<HighlightBox>
-									<HighlightBoxContent>Выучим 10 новых слов</HighlightBoxContent>
-								</HighlightBox>
-								<HighlightBox className="transparent">
-									<HighlightBoxContent className='transparent'>Полностью бесплатно. Да, даже если решите не заниматься с нами. Без звездочек и скрытых условий.</HighlightBoxContent>
-								</HighlightBox>
-							</HighlightBoxWrapper>
-						</VerticalDiv>
-					</HorizontalDiv>
-					<Button className="primary" to="contact" smooth={true} duration={1000} spy={true} exact='true' offset={-300}>Записаться<ArrowRight /></Button>
-				</VerticalDiv>
 				
 				<VerticalDiv className='centered' id='learn'>
 					<HorizontalDiv>

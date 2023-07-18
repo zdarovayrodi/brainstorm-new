@@ -42,9 +42,7 @@ export const Tv = styled(FaTv)`
 `
 
 export const ArrowRight = styled(FaArrowRight)`
-    font-size: 22px;
-    position: absolute;
-    transform: translate(10px, 4px);
+    transform: translate(0, -1px);
 `
 
 export const Conversation = styled(BiConversation)`
