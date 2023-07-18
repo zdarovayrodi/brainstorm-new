@@ -111,7 +111,7 @@ const App = () => {
 							<PlanCardContent>Учите правила, грамматические конструкции, новые слова</PlanCardContent>
 							<SecondaryBox>
 								<span>Нарабатывайте активный запас слов и лексики</span>
-								<SecondaryBotton to="contact" smooth={true} duration={1000} spy={true} exact='true' offset={-300}>749 руб.</SecondaryBotton>
+								<SecondaryBotton to="contact" smooth={true} duration={1000} spy={true} exact='true' offset={-300}>799 руб.</SecondaryBotton>
 							</SecondaryBox>
 						</PlanCard>
 						<PlanCard>
