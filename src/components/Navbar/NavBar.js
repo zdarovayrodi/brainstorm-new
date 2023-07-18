@@ -14,7 +14,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
                 <Nav.Link href="#main">Главная</Nav.Link>
-                <Nav.Link href="#">Преимущества</Nav.Link>
+                <Nav.Link href="#whywe">Преимущества</Nav.Link>
                 <Nav.Link href="#">Виды занятий</Nav.Link>
                 <Nav.Link href="#">Бесплатное занятие</Nav.Link>
                 <Nav.Link href="#">Зачем учить?</Nav.Link>

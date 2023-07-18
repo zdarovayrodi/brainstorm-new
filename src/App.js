@@ -18,7 +18,7 @@ import { PlanCard, PlanCardContent, PlanCardName, PlanCardWrapper, RedLabel, Sec
 import NavBar from './components/Navbar/NavBar';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Row, Col, Alert, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Alert, Badge, Image } from 'react-bootstrap';
 
 
 
@@ -30,14 +30,14 @@ const App = () => {
 		<Container>
 			{/* Hero section */}
 			<Row id='main'>
-				<Col className='d-flex flex-column align-items-center mt-5 align-items-center'>
+				<Col className='d-flex flex-column align-items-center mt-5'>
 					<h1>Устали от <Accent>обычных занятий</Accent> английского языка?</h1>
 					<h6 className='text-muted'>От новичка до уверенного говорящего на английском за 3 месяца: наш проверенный метод</h6>
-					<Row className="mt-4">
+					<Row className="mt-4 d-flex flex-column flex-sm-row">
 						<Col className="col-auto">
 							<a className="btn btn-primary" variant="primary" href="#">Получить бесплатно</a>
 						</Col>
-						<Col className="col-auto">
+						<Col className="col-auto mt-1 mt-sm-0">
 							<a className="btn btn-outline-secondary" href="#">Почему мы</a>
 						</Col>
 					</Row>
@@ -45,7 +45,7 @@ const App = () => {
 			</Row>
 
 			{/* Alert cards */}
-			<Row className='mt-5'>
+			<Row className='mt-5 d-flex flex-column flex-md-row'>
 				<Col>
 					<Alert variant='info'>
 						<Alert.Heading>
@@ -70,42 +70,23 @@ const App = () => {
 						<p>Для детей школьного возраста</p>
 					</Alert>
 				</Col>
-				
+			</Row>
+
+			{/* Why we section */}
+			<Row className="align-items-center" id='whywe'>
+				{/* img */}
+				<Col sm={6}>
+					<Image src={GamerIllustration} fluid />
+				</Col>
+				{/* text */}
+				<Col className='align-items-center'>
+					<h2><Accent>Играй</Accent>, развлекайся, учись!</h2>
+					<p>Носители языка помогут Вашему ребенку выучить новые слова и усовершенствовать свою грамматику в <Accent>интерактивной форме</Accent>.</p>
+				</Col>
 			</Row>
 		</Container>
 
 			<Root>
-				<VerticalDiv className='centered' id='whywe'>
-					<HorizontalDiv>
-						<Illustration backgroundImg={GamerIllustration} />
-						<VerticalDiv>
-							<H2><Accent>Играй</Accent>, развлекайся, учись!</H2>
-							<P>Носители языка помогут Вашему ребенку выучить новые слова и усовершенствовать свою грамматику в <Accent>интерактивной форме</Accent>.</P>
-						</VerticalDiv>
-					</HorizontalDiv>
-				</VerticalDiv> 
-				{/* 
-				<VerticalDiv className='centered' id='lessons'>
-					<H2>Виды занятий</H2>
-					<P className='centered'>У нас есть три вида занятий: они определяют концепцию проведения урока с преподавателем. Подходят для любого уровня владения языком!</P>
-					<LessonCardWrapper>
-						<LessonCard>
-							<LessonCardImage background={GamingBg} />
-							<HighlightBoxName className='centered'><Gamepad />Игровое</HighlightBoxName>
-							<HighlightBoxContent >Играйте с носителем языка в ваши любимые игры! Идеально для любителей компьютерных игр!</HighlightBoxContent>
-						</LessonCard>
-						<LessonCard>
-							<LessonCardImage background={StudyingBg} />
-							<HighlightBoxName className='centered'><University />Консультация</HighlightBoxName>
-							<HighlightBoxContent >Учите правила, грамматические конструкции, новые слова</HighlightBoxContent>
-						</LessonCard>
-						<LessonCard>
-							<LessonCardImage background={MovieBg} />
-							<HighlightBoxName className='centered'><Tv />Развлекательное</HighlightBoxName>
-							<HighlightBoxContent >Обсудите и разберите фильмы, сериалы, книги с англоязычным носителем</HighlightBoxContent>
-						</LessonCard>
-					</LessonCardWrapper>
-				</VerticalDiv> */}
 
 				<VerticalDiv className='centered' id='lessons'>
 					<H2>Виды занятий</H2>
