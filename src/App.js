@@ -19,30 +19,44 @@ import Navbar from './components/Navbar';
 import { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import { PlanCard, PlanCardContent, PlanCardName, PlanCardWrapper, RedLabel, SecondaryBotton, SecondaryBox } from './components/Plans';
+import NavBar from './components/Navbar/NavBar';
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 
 const App = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => {
-        setIsOpen(!isOpen);
-    };
 
 	return (
 		<>
-			<Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
+		<NavBar />
+		<Container>
+			<Row id='main'>
+				<Col className='d-flex flex-column align-items-center mt-5 align-items-center'>
+					<h1>Устали от <Accent>обычных занятий</Accent> английского языка?</h1>
+					<h6>От новичка до уверенного говорящего на английском за 3 месяца: наш проверенный метод</h6>
+					<Row className="mt-4 me mb-5">
+						<Col className="col-auto">
+							<a className="btn btn-primary" variant="primary" href="#">Получить бесплатно</a>
+						</Col>
+						<Col className="col-auto">
+							<a className="btn btn-outline-secondary" href="#">Почему мы</a>
+						</Col>
+					</Row>
+				</Col>
+			</Row>
+		</Container>
 
 			<Root>
-				<VerticalDiv className='centered' id='main'>
+				{/* <VerticalDiv className='centered' id='main'>
 					<H1>Устали от <Accent>обычных занятий</Accent> английского языка?</H1>
 					<P className='centered'>От новичка до уверенного говорящего на английском за 3 месяца: наш проверенный метод</P>
 					<ButtonWrapper>
 						<Button className='primary' to="contact" smooth={true} duration={1000} spy={true} exact='true' offset={-300}>Получить бесплатно<ArrowRight /></Button>
 						<Button to="whywe" smooth={true} duration={1000} spy={true} exact='true' offset={-100}>Почему мы?</Button>
 					</ButtonWrapper>
-				</VerticalDiv>
+				</VerticalDiv> */}
 
 				<HighlightBoxWrapper className='mainBlock'>
 						<HighlightBox>
@@ -303,13 +317,13 @@ const App = () => {
 
 			</Root>
 
-			<HeroWrapper id='footer'>
+			{/* <HeroWrapper id='footer'>
 				<Wrapper>
 					<FooterH1>Свяжитесь с нами</FooterH1>
 					<Item href="mailto:brainstorm@yandex.ru">brainstorm@yandex.ru</Item>
 					<Item href="tel:+79133600838">+7 (913) 360-08-38</Item>
 				</Wrapper>
-			</HeroWrapper>
+			</HeroWrapper> */}
 
 			
 		</>
