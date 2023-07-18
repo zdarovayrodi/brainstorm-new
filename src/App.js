@@ -18,7 +18,7 @@ import { PlanCard, PlanCardContent, PlanCardName, PlanCardWrapper, RedLabel, Sec
 import NavBar from './components/Navbar/NavBar';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Alert, Badge } from 'react-bootstrap';
 
 
 
@@ -28,11 +28,12 @@ const App = () => {
 		<>
 		<NavBar />
 		<Container>
+			{/* Hero section */}
 			<Row id='main'>
 				<Col className='d-flex flex-column align-items-center mt-5 align-items-center'>
 					<h1>Устали от <Accent>обычных занятий</Accent> английского языка?</h1>
-					<h6>От новичка до уверенного говорящего на английском за 3 месяца: наш проверенный метод</h6>
-					<Row className="mt-4 me mb-5">
+					<h6 className='text-muted'>От новичка до уверенного говорящего на английском за 3 месяца: наш проверенный метод</h6>
+					<Row className="mt-4">
 						<Col className="col-auto">
 							<a className="btn btn-primary" variant="primary" href="#">Получить бесплатно</a>
 						</Col>
@@ -42,24 +43,38 @@ const App = () => {
 					</Row>
 				</Col>
 			</Row>
+
+			{/* Alert cards */}
+			<Row className='mt-5'>
+				<Col>
+					<Alert variant='info'>
+						<Alert.Heading>
+							<GlobeEurope /> Носители языка
+						</Alert.Heading>
+						<p>Преподаватели со всего мира</p>
+					</Alert>
+				</Col>
+				<Col>
+					<Alert variant='info'>
+						<Alert.Heading>
+							<Star /> За 3 месяца
+						</Alert.Heading>
+						<p>Избавим ученика от языкового барьера</p>
+					</Alert>
+				</Col>
+				<Col>
+					<Alert variant='info'>
+						<Alert.Heading>
+							<Child /> Подходит
+						</Alert.Heading>
+						<p>Для детей школьного возраста</p>
+					</Alert>
+				</Col>
+				
+			</Row>
 		</Container>
 
 			<Root>
-				<HighlightBoxWrapper className='mainBlock'>
-						<HighlightBox>
-							<HighlightBoxName><GlobeEurope />Носители языка</HighlightBoxName>
-							<HighlightBoxContent>Преподаватели со всего мира</HighlightBoxContent>
-						</HighlightBox>
-						<HighlightBox>
-							<HighlightBoxName><Star />За 3 месяца</HighlightBoxName>
-							<HighlightBoxContent>Избавим ученика от языкового барьера</HighlightBoxContent>
-						</HighlightBox>
-						<HighlightBox>
-							<HighlightBoxName><Child />Подходит</HighlightBoxName>
-							<HighlightBoxContent>Для детей школьного возраста</HighlightBoxContent>
-						</HighlightBox>
-				</HighlightBoxWrapper>
-
 				<VerticalDiv className='centered' id='whywe'>
 					<HorizontalDiv>
 						<Illustration backgroundImg={GamerIllustration} />

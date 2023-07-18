@@ -9,21 +9,15 @@ import { GiBookshelf } from 'react-icons/gi';
 
 
 export const GlobeEurope = styled(FaGlobeEurope)`
-    font-size: 22px;
-    position: absolute;
-    transform: translate(-30px, 2px);
+    transform: translateY(-2px);
 `
 
 export const Star = styled(FaStar)`
-    font-size: 22px;
-    position: absolute;
-    transform: translate(-30px, 2px);
+    transform: translateY(-2px);
 `
 
 export const Child = styled(FaChild)`
-    font-size: 22px;
-    position: absolute;
-    transform: translate(-30px, 2px);
+    transform: translate(-2px);
 `
 
 
