@@ -15,7 +15,7 @@ function NavBar() {
             <Nav className="me-auto">
                 <Nav.Link href="#main">Главная</Nav.Link>
                 <Nav.Link href="#whywe">Преимущества</Nav.Link>
-                <Nav.Link href="#">Виды занятий</Nav.Link>
+                <Nav.Link href="#lessons">Виды занятий</Nav.Link>
                 <Nav.Link href="#">Бесплатное занятие</Nav.Link>
                 <Nav.Link href="#">Зачем учить?</Nav.Link>
                 <Nav.Link href="#">Стоимость</Nav.Link>

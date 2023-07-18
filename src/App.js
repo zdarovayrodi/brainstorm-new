@@ -18,11 +18,25 @@ import { PlanCard, PlanCardContent, PlanCardName, PlanCardWrapper, RedLabel, Sec
 import NavBar from './components/Navbar/NavBar';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Row, Col, Alert, Badge, Image } from 'react-bootstrap';
+import { Container, Row, Col, Alert, Badge, Image, Card, Carousel } from 'react-bootstrap';
 
+import ReactCardCarousel from "react-card-carousel";
 
 
 const App = () => {
+	function CONTAINER_STYLE() {
+		return {
+		  position: "relative",
+		  // height: "100vh",
+		  marginTop: "230px",
+		  width: "38rem",
+		  maxWidth: "min(38rem, 100%)",
+		  display: "flex",
+		  flex: 1,
+		  justifyContent: "center",
+		  alignItems: "middle"
+		};
+	  }
 
 	return (
 		<>
@@ -84,44 +98,53 @@ const App = () => {
 					<p>Носители языка помогут Вашему ребенку выучить новые слова и усовершенствовать свою грамматику в <Accent>интерактивной форме</Accent>.</p>
 				</Col>
 			</Row>
+
+			<Row className="" id='lessons'>
+						
+				<Col>
+					<h2>Виды занятий</h2>
+					<div style={CONTAINER_STYLE()}>
+						<ReactCardCarousel autoplay={false}>
+							<Card>
+								<Card.Img variant="top" src={GamingBg} />
+								<Card.Body>
+									<Card.Title>Игровое</Card.Title>
+									<Card.Text>
+									Играйте с носителем языка в ваши любимые игры!
+									</Card.Text>
+									<p className='text-muted'>Идеально для любителей компьютерных игр!</p>
+									<a className="btn btn-dark" href="#">649₽</a>
+								</Card.Body>
+							</Card>
+							<Card>
+								<Card.Img variant="top" src={StudyingBg} />
+								<Card.Body>
+									<Card.Title>Консультация</Card.Title>
+									<Card.Text>
+									Учите правила, грамматические конструкции, новые слова
+									</Card.Text>
+									<p className='text-muted'>Нарабатывайте активный запас слов и лексики</p>
+									<a className="btn btn-dark" href="#">799₽</a>
+								</Card.Body>
+							</Card>
+							<Card>
+								<Card.Img variant="top" src={MovieBg} />
+								<Card.Body>
+									<Card.Title>Развлекательное</Card.Title>
+									<Card.Text>
+									Обсудите и разберите фильмы, сериалы, книги с носителем
+									</Card.Text>
+									<p className='text-muted'>Изучайте язык через погружение в культуру</p>
+									<a className="btn btn-dark" href="#">649₽</a>
+								</Card.Body>
+							</Card>
+						</ReactCardCarousel>
+					</div>
+				</Col>
+			</Row>
 		</Container>
 
 			<Root>
-
-				<VerticalDiv className='centered' id='lessons'>
-					<H2>Виды занятий</H2>
-					<P className='centered'>У нас есть три вида занятий: они определяют концепцию проведения урока с преподавателем. Подходят для любого уровня владения языком!</P>
-					<PlanCardWrapper>
-						<PlanCard>
-							<LessonCardImage background={GamingBg} />
-							<PlanCardName>Игровое</PlanCardName>
-							<PlanCardContent>Играйте с носителем языка в ваши любимые игры!</PlanCardContent>
-							<SecondaryBox>
-								<span>Идеально для любителей компьютерных игр!</span>
-								<SecondaryBotton to="contact" smooth={true} duration={1000} spy={true} exact='true' offset={-300}>649 руб.</SecondaryBotton>
-							</SecondaryBox>
-						</PlanCard>
-						<PlanCard>
-							<LessonCardImage background={StudyingBg} />
-							{/* <RedLabel>самый выгодный</RedLabel> */}
-							<PlanCardName>Консультация</PlanCardName>
-							<PlanCardContent>Учите правила, грамматические конструкции, новые слова</PlanCardContent>
-							<SecondaryBox>
-								<span>Нарабатывайте активный запас слов и лексики</span>
-								<SecondaryBotton to="contact" smooth={true} duration={1000} spy={true} exact='true' offset={-300}>799 руб.</SecondaryBotton>
-							</SecondaryBox>
-						</PlanCard>
-						<PlanCard>
-							<LessonCardImage background={MovieBg} />
-							<PlanCardName>Развлекательное</PlanCardName>
-							<PlanCardContent>Обсудите и разберите фильмы, сериалы, книги с носителем</PlanCardContent>
-							<SecondaryBox>
-								<span>Изучайте язык через погружение в культуру</span>
-								<SecondaryBotton to="contact" smooth={true} duration={1000} spy={true} exact='true' offset={-300}>649 руб.</SecondaryBotton>
-							</SecondaryBox>
-						</PlanCard>
-					</PlanCardWrapper>
-				</VerticalDiv>
 
 				<VerticalDiv className='centered' id='freelesson'>
 					<HorizontalDiv>
