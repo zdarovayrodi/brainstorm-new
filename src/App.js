@@ -14,10 +14,6 @@ import MovieBg from './resources/movie.jpg';
 // icons
 import { GlobeEurope, Star, Child, Gamepad, University, Tv, ArrowRight, Conversation, Popcorn, Puzzle, TelegramPlane, Group, UniversitySmall, Search, Bookshelf, Rocket, City } from './components/Icons';
 import { Illustration } from './components/Images.js';
-import { FooterH1, HeroWrapper, Item, Wrapper } from './components/Footer';
-import Navbar from './components/Navbar';
-import { useState } from 'react';
-import Sidebar from './components/Sidebar';
 import { PlanCard, PlanCardContent, PlanCardName, PlanCardWrapper, RedLabel, SecondaryBotton, SecondaryBox } from './components/Plans';
 import NavBar from './components/Navbar/NavBar';
 
@@ -49,15 +45,6 @@ const App = () => {
 		</Container>
 
 			<Root>
-				{/* <VerticalDiv className='centered' id='main'>
-					<H1>Устали от <Accent>обычных занятий</Accent> английского языка?</H1>
-					<P className='centered'>От новичка до уверенного говорящего на английском за 3 месяца: наш проверенный метод</P>
-					<ButtonWrapper>
-						<Button className='primary' to="contact" smooth={true} duration={1000} spy={true} exact='true' offset={-300}>Получить бесплатно<ArrowRight /></Button>
-						<Button to="whywe" smooth={true} duration={1000} spy={true} exact='true' offset={-100}>Почему мы?</Button>
-					</ButtonWrapper>
-				</VerticalDiv> */}
-
 				<HighlightBoxWrapper className='mainBlock'>
 						<HighlightBox>
 							<HighlightBoxName><GlobeEurope />Носители языка</HighlightBoxName>
