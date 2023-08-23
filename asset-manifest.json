@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/brainstorm-new/static/css/main.8bdb0ba7.css",
+    "main.js": "/brainstorm-new/static/js/main.65a30388.js",
+    "static/media/studying.jpg": "/brainstorm-new/static/media/studying.cd26fbafd7dbb4d62734.jpg",
+    "static/media/gaming.jpg": "/brainstorm-new/static/media/gaming.4f8ad22b9a6bbdbd0aa0.jpg",
+    "static/media/movie.jpg": "/brainstorm-new/static/media/movie.7f6863efca3293449f4c.jpg",
+    "static/media/Gamer.png": "/brainstorm-new/static/media/Gamer.a892efc718da08691ba3.png",
+    "index.html": "/brainstorm-new/index.html",
+    "main.8bdb0ba7.css.map": "/brainstorm-new/static/css/main.8bdb0ba7.css.map",
+    "main.65a30388.js.map": "/brainstorm-new/static/js/main.65a30388.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8bdb0ba7.css",
+    "static/js/main.65a30388.js"
+  ]
+}
