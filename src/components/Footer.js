@@ -1,57 +1,16 @@
-import styled from "styled-components";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
-export const HeroWrapper = styled.div`
-    width: 100wv;
-    background-color: rgba(6, 174, 255, 1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
+const Footer = () => {
+	return (
+        <Row className="mt-5">
+            <Col sm={4} className="d-flex flex-column">
+                <h3>Brainstorm</h3>
+                <a href="mailto:brainstorm@yandex.ru">brainstorm@yandex.ru</a>
+                <a href="tel:+79133600838">+7 (913) 360-08-38</a>
+            </Col>
+        </Row>
+    );
+}
 
-export const Wrapper = styled.div`
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    align-items: left;
-    justify-content: center;
-    padding: 40px 0px;
-    
-    @media (max-width: 1200px) {
-        padding: 30px 40px;
-    }
-`
-
-export const FooterH1 = styled.span`
-    font-weight: 800;
-    color: white;
-    font-size: 42px;
-    /* text-align: center; */
-
-    line-height: 80px;
-    margin-bottom: 30px;
-
-    @media screen and (max-width: 1000px) {
-        font-size: 48px;
-        line-height: 52px;
-    }
-
-    @media screen and (max-width: 384px) {
-        font-size: 36px;
-        line-height: 42px;
-    }
-`
-
-export const Item = styled.a`
-    font-size: 22px;
-    color: #fff;
-    margin-bottom: 20px;
-    left: 0;
-    text-decoration: none;
-    underline: none;
-
-    @media screen and (max-width: 1200px) {
-        font-size: 18px;
-    }
-`
+export default Footer;
