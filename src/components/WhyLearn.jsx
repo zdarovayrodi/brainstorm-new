@@ -3,17 +3,21 @@ import React from 'react'
 // icons
 import { BiBook, BiConversation, BiRocket, BiSearchAlt } from 'react-icons/bi';
 import { PiPopcornBold } from 'react-icons/pi';
-import { BsFillRocketTakeoffFill, BsPuzzle } from 'react-icons/bs';
-import { FaCity, FaPlane, FaTelegramPlane, FaUniversity } from 'react-icons/fa';
+import { BsPuzzle } from 'react-icons/bs';
+import { FaTelegramPlane } from 'react-icons/fa';
 import { MdGroup, MdMuseum } from 'react-icons/md';
-import { GiBookStorm, GiBookshelf } from 'react-icons/gi';
+import PlansCardElement from './PlansCardElement';
 
 
 const WhyLearn = () => {
   return (
-    <section className="w-full md:py-16 px-4 overflow-hidden py-8">
+    <section className="w-full md:py-16 overflow-hidden py-8">
         <div className="container max-w-[1240px] mx-auto">
-            <div className='grid md:grid-cols-2 gap-4 mb-10'>
+            <span className="block mb-1 text-lg font-semibold text-primary md:hidden px-4">
+                Зачем учить английский
+            </span>
+            <PlansCardElement className="px-[-4]"/>
+            <div className='hidden md:grid md:grid-cols-2 gap-4 mb-10  px-4'>
                 <div>
                     <span className="block mb-1 text-lg font-semibold text-primary">
                         Зачем учить английский
@@ -125,10 +129,12 @@ const WhyLearn = () => {
                     </ul>
                 </div>
             </div>
-            <a href="#"
-                className="rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 border border-gray-700">
-                Начать учить <span aria-hidden="true">→</span>
-            </a>
+            <div className='px-4'>
+                <div href="#"
+                    className="rounded-md mt-5 inline-block px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 border border-gray-700">
+                    Начать учить <span aria-hidden="true">→</span>
+                </div>
+            </div>
         </div>
     </section>
   )
