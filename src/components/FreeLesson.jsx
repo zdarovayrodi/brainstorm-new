@@ -5,13 +5,13 @@ const FreeLesson = () => {
     <section className="w-full md:py-16 px-4 overflow-hidden py-8">
         <div className="container max-w-[1240px] mx-auto">
             <span className="block mb-1  text-lg font-semibold text-primary">
-                Бесплатное
+                Полностью
             </span>
             <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl">
-                Вводное занятие
+                Бесплатное вводное занятие
             </h2>
             <p className="mb-8 text-base">
-                Полностью бесплатно. Да, даже если решите не заниматься с нами. Без звездочек и скрытых условий.
+                Да, даже если решите не заниматься с нами. Без звездочек и скрытых условий.
             </p>
             <div className='my-10 grid md:grid-cols-2 md:my-16'>
 
