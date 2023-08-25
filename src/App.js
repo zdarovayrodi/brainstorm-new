@@ -20,9 +20,9 @@ const App = () => {
 			<Hero />
 			<Stats />
 			<Features />
+			<WhyLearn />
 			<Lessons />
 			<FreeLesson />
-			<WhyLearn />
 			<CTA />
 			<Plans />
 			<CTAPlan />
