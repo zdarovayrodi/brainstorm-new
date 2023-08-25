@@ -15,7 +15,7 @@ const Plans = () => {
         <div className="flex flex-wrap items-center justify-between">
             <div className="max-w-[1240px] lg:w-1/2 xl:w-5/12 px-4">
                 <div className="mt-10 lg:mt-0">
-                    <span className="block mb-1  text-lg font-semibold text-primary">
+                    <span className="mb-1 text-lg font-semibold text-primary bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent from-blue-500 to-red-500 dark:to-purple-500">
                         Хотите эконимить?
                     </span>
                     <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl">

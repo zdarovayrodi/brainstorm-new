@@ -17,7 +17,7 @@ const Features = () => {
             </div>
             <div className="max-w-[1240px] lg:w-1/2 xl:w-5/12">
                 <div className="mt-10 lg:mt-0">
-                    <span className="block mb-1  text-lg font-semibold text-primary">
+                    <span className="mb-1 text-lg font-semibold text-primary bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent from-blue-500 to-red-500 dark:to-purple-500">
                         Почему с нами
                     </span>
                     <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl">

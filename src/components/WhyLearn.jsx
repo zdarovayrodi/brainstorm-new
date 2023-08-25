@@ -13,13 +13,13 @@ const WhyLearn = () => {
   return (
     <section className="w-full md:py-16 overflow-hidden py-8">
         <div className="container max-w-[1240px] mx-auto">
-            <span className="block mb-1 text-lg font-semibold text-primary md:hidden px-4">
+            <span className="text-primary md:hidden px-4 mb-1 text-lg font-semibold text-primary bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent from-blue-500 to-red-500 dark:to-purple-500">
                 Зачем учить английский
             </span>
             <PlansCardElement className="px-[-4]"/>
             <div className='hidden md:grid md:grid-cols-2 gap-4 mb-10  px-4'>
                 <div>
-                    <span className="block mb-1 text-lg font-semibold text-primary">
+                    <span className="mb-1 text-lg font-semibold text-primary bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent from-blue-500 to-red-500 dark:to-purple-500">
                         Зачем учить английский
                     </span>
                     <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl">
