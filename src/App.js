@@ -1,7 +1,7 @@
 import './App.css';
 import './index.css';
 
-import NavBar from './components/Navbar/NavBar';
+import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Features from './components/Features';

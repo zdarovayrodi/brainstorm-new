@@ -10,7 +10,7 @@ import { ReactComponent as Gamer } from '../resources/Gamer.svg'
 
 const Lessons = () => {
   return (
-    <section className="w-full md:py-16 overflow-hidden py-8">
+    <section className="w-full md:py-16 overflow-hidden py-8" id='lessons'>
         <div className="container max-w-[1240px] mx-auto">
             <div className="flex flex-wrap items-center justify-between">
                 <div className="max-w-[1240px] lg:w-1/2 xl:w-5/12 px-4">

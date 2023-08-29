@@ -7,11 +7,12 @@ import { BsPuzzle } from 'react-icons/bs';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { MdGroup, MdMuseum } from 'react-icons/md';
 import PlansCardElement from './PlansCardElement';
+import { Button } from './Button';
 
 
 const WhyLearn = () => {
   return (
-    <section className="w-full md:py-16 overflow-hidden py-8">
+    <section className="w-full md:py-16 overflow-hidden py-8" id='whylearn'>
         <div className="container max-w-[1240px] mx-auto">
             <span className="text-primary md:hidden px-4 mb-1 text-lg font-semibold text-primary bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent from-blue-500 to-red-500 dark:to-purple-500">
                 Зачем учить английский
@@ -130,10 +131,11 @@ const WhyLearn = () => {
                 </div>
             </div>
             <div className='px-4'>
-                <div href="#"
-                    className="rounded-md mt-5 inline-block px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 border border-gray-700">
+                <Button to="freelesson"
+                        spy={true} smooth={true} offset={-80} duration={500} 
+                        className="cursor-pointer rounded-md mt-5 inline-block px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 border border-gray-700">
                     Начать учить <span aria-hidden="true">→</span>
-                </div>
+                </Button>
             </div>
         </div>
     </section>

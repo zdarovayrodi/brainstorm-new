@@ -1,9 +1,9 @@
+import {Button} from './Button'
+
 export default function Hero() {
 
 return (
-    <div className="">
-
-    <div className="relative isolate px-6 lg:px-8">
+    <div className="relative isolate px-6 lg:px-8" id='hero'>
         <div
         className="absolute inset-x-0 -top-22 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-40"
         aria-hidden="true"
@@ -25,15 +25,17 @@ return (
                     От новичка до уверенного говорящего на английском за 3 месяца: наш проверенный метод
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                    href="#"
+                <Button
+                    to='freelesson'
                     className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                    spy={true} smooth={true} offset={-80} duration={500}
                 >
                     Получить бесплатно
-                </a>
-                <a href="#" className="text-sm font-semibold leading-6">
+                </Button>
+                <Button to='features' className="text-sm font-semibold leading-6 cursor-pointer"
+                        spy={true} smooth={true} offset={-80} duration={500}>
                     Почему мы <span aria-hidden="true">→</span>
-                </a>
+                </Button>
                 </div>
             </div>
         </div>
@@ -49,7 +51,6 @@ return (
             }}
         />
         </div>
-    </div>
     </div>
 )
 }

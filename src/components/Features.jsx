@@ -1,11 +1,12 @@
 import React from "react";
 import { ReactComponent as Gamer } from '../resources/Gamer.svg'
+import { Button } from "./Button";
 
 const Features = () => {
   return (
     <>
       {/* <section className="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] px-20 overflow-hidden"> */}
-    <section className="w-full md:py-16 px-4 overflow-hidden py-8">
+    <section className="w-full md:py-16 px-4 overflow-hidden py-8" id="features">
         <div className="container max-w-[1240px] mx-auto">
         <div className="flex flex-wrap items-center justify-between">
             <div className="w-full px-auto lg:w-6/12">
@@ -28,9 +29,11 @@ const Features = () => {
                             новые слова и усовершенствовать свою грамматику
                             в интерактивной форме.
                     </p>
-                    <a href="#" className="rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 border border-gray-700">
+                    <Button to="freelesson"
+                            spy={true} smooth={true} offset={-80} duration={500} 
+                            href="#" className="rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 border border-gray-700">
                         Начать заниматься <span aria-hidden="true">→</span>
-                    </a>
+                    </Button>
                 </div>
             </div>
         </div>

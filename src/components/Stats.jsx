@@ -6,7 +6,7 @@ const stats = [
   
   export default function Example() {
     return (
-      <div className="py-20 sm:py-8">
+      <div className="py-20 sm:py-8" id="stats">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
             {stats.map((stat) => (

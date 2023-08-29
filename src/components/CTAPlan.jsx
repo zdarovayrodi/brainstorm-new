@@ -2,7 +2,7 @@ import React from 'react'
 
 const CTAPlan = () => {
   return (
-    <section className="w-full md:py-16 px-4 overflow-hidden py-8">
+    <section className="w-full md:py-16 px-4 overflow-hidden py-8" id='ctaplan'>
         <div className="container max-w-[1240px] mx-auto">
             <span className="mb-1 text-lg font-semibold text-primary bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent from-blue-500 to-red-500 dark:to-purple-500">
                 Уже решили?

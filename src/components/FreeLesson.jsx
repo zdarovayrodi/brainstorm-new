@@ -1,8 +1,9 @@
 import React from 'react'
+import { Button } from './Button'
 
 const FreeLesson = () => {
   return (
-    <section className="w-full md:py-16 px-4 overflow-hidden py-8">
+    <section className="w-full md:py-16 px-4 overflow-hidden py-8" id='freelesson'>
         <div className="container max-w-[1240px] mx-auto">
             <span className="mb-1 text-lg font-semibold text-primary bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent from-blue-500 to-red-500 dark:to-purple-500">
                 Полностью
@@ -46,9 +47,11 @@ const FreeLesson = () => {
                     </li>
                 </ul>
             </div>
-            <a href="#" className="rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 border border-gray-700">
+            <Button to="cta"
+                    spy={true} smooth={true} offset={-80} duration={500} 
+                    className="cursor-pointer rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 border border-gray-700">
                 Записаться <span aria-hidden="true">→</span>
-            </a>
+            </Button>
         </div>
     </section>
   )
