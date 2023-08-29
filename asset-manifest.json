@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/brainstorm-new/static/css/main.422b3a6e.css",
-    "main.js": "/brainstorm-new/static/js/main.28d82ed9.js",
+    "main.css": "/brainstorm-new/static/css/main.5a483083.css",
+    "main.js": "/brainstorm-new/static/js/main.e87d6366.js",
     "static/media/studying.jpg": "/brainstorm-new/static/media/studying.cd26fbafd7dbb4d62734.jpg",
     "static/media/gaming.jpg": "/brainstorm-new/static/media/gaming.4f8ad22b9a6bbdbd0aa0.jpg",
     "static/media/movie.jpg": "/brainstorm-new/static/media/movie.7f6863efca3293449f4c.jpg",
-    "static/media/Gamer.png": "/brainstorm-new/static/media/Gamer.a892efc718da08691ba3.png",
     "static/media/Gamer.svg": "/brainstorm-new/static/media/Gamer.5149f113528272e6232966f1986ee83b.svg",
     "index.html": "/brainstorm-new/index.html",
-    "main.422b3a6e.css.map": "/brainstorm-new/static/css/main.422b3a6e.css.map",
-    "main.28d82ed9.js.map": "/brainstorm-new/static/js/main.28d82ed9.js.map"
+    "main.5a483083.css.map": "/brainstorm-new/static/css/main.5a483083.css.map",
+    "main.e87d6366.js.map": "/brainstorm-new/static/js/main.e87d6366.js.map"
   },
   "entrypoints": [
-    "static/css/main.422b3a6e.css",
-    "static/js/main.28d82ed9.js"
+    "static/css/main.5a483083.css",
+    "static/js/main.e87d6366.js"
   ]
 }
