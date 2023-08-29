@@ -1,5 +1,5 @@
 import React from "react";
-import { MdEmail, MdOutlineEmail } from "react-icons/md";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="w-full mb-10">
                 <h2 className="mb-8 text-3xl font-bold sm:text-4xl">
-                    Brainstorm
+                  Brainstorm
                 </h2>
                 <p className="flex items-center text-sm font-medium ">
                   <span className="mr-3 text-primary">
@@ -28,7 +28,7 @@ const Footer = () => {
                   <a href="tel:+79133600838">+7 (913) 360-08-38</a>
                 </p>
                 <p className="flex items-center text-sm font-medium mt-3">
-                    <MdOutlineEmail className="mr-3 text-primary text-xl"/>
+                  <MdOutlineEmail className="mr-3 text-primary text-xl" />
                   <a href="mailto:brainstorm@yandex.ru">brainstorm@yandex.ru</a>
                 </p>
               </div>

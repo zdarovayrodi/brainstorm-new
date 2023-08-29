@@ -1,4 +1,3 @@
-import './App.css';
 import './index.css';
 
 import NavBar from './components/NavBar';
@@ -28,7 +27,7 @@ const App = () => {
 			<CTAPlan />
 			<Footer />
 		</div>
-  );
+	);
 }
 
 export default App;

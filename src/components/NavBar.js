@@ -22,7 +22,6 @@ const NavBar = () => {
                     <Link as='li' className='p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white' to='lessons' spy={true} smooth={true} offset={-80} duration={500}>Виды занятий</Link>
                     <Link as='li' className='p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white' to='freelesson' spy={true} smooth={true} offset={-80} duration={500}>Бесплатное занятие</Link>
                     <Link as='li' className='p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white mr-1' to='plans' spy={true} smooth={true} offset={-80} duration={500}>Наборы</Link>
-                    {/* <Link as='li' className='p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white mr-1' to='footer' spy={true} smooth={true} offset={-80} duration={500}>Контакты</Link> */}
                 </ul>
                 <div onClick={handleNav} className='lg:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -40,7 +39,6 @@ const NavBar = () => {
                             <Link as='li' className='block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:hover:bg-gray-500' onClick={handleNav} to='lessons' spy={true} smooth={true} offset={-80} duration={500}>Виды занятий</Link>
                             <Link as='li' className='block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:hover:bg-gray-500' onClick={handleNav} to='freelesson' spy={true} smooth={true} offset={-80} duration={500}>Бесплатное занятие</Link>
                             <Link as='li' className='block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:hover:bg-gray-500' onClick={handleNav} to='plans' spy={true} smooth={true} offset={-80} duration={500}>Наборы</Link>
-                            {/* <Link as='li' className='block py-2 pl-3 pr-4 rounded hover:bg-gray-100 dark:hover:bg-gray-500' onClick={handleNav} to='content' spy={true} smooth={true} offset={-80} duration={500}>Контакты</Link> */}
                             <Link as='li' className='block py-2 mt-2
                                             text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800' onClick={handleNav} to='cta' spy={true} smooth={true} offset={-80} duration={500} type="button">
                                     Получить бесплатно
