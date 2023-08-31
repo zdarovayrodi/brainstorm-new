@@ -1,5 +1,6 @@
 import React from "react";
 import ReactCardCarousel from "react-card-carousel";
+import { Button as ButtonHref } from "./Button"
 
 // images
 import GamingBg from "../resources/gaming.jpg";
@@ -31,24 +32,23 @@ const Lessons = () => {
               <SingleCard
                 image={StudyingBg}
                 CardTitle="Консультация"
-                btnHref="/#"
                 CardDescription="Учите правила, грамматические конструкции, новые слова"
                 CardInfo="Нарабатывайте активный запас слов и лексики"
-                Button="View Details"
+                ButtonText="799₽"
               />
               <SingleCard
                 image={GamingBg}
                 CardTitle="Игровое"
                 CardDescription="Играйте с носителем языка в ваши любимые игры!"
                 CardInfo="Идеально для любителей компьютерных игр!"
-                Button="View Details"
+                ButtonText="649₽"
               />
               <SingleCard
                 image={MovieBg}
                 CardTitle="Развлекательное"
                 CardDescription="Обсудите и разберите фильмы, сериалы, книги с носителем"
                 CardInfo="Изучайте язык через погружение в культуру"
-                Button="View Details"
+                ButtonText="649₽"
               />
             </ReactCardCarousel>
           </div>
@@ -62,16 +62,14 @@ export default Lessons;
 
 const SingleCard = ({
   image,
-  Button,
   CardDescription,
   CardTitle,
   CardInfo,
-  titleHref,
-  btnHref,
+  ButtonText,
 }) => {
   return (
     <>
-      <div className="overflow-hidden bg-blue-100 dark:bg-gray-700 rounded-lg min-w-[280px] w-[280px]">
+      <div className="overflow-hidden bg-blue-100 dark:bg-gray-700 rounded-lg min-w-[280px] w-[280px] pb-4">
         <img src={image} alt="" className="w-full mb-4" />
         <div className="text-left px-4">
           <h3 className="mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
@@ -81,6 +79,14 @@ const SingleCard = ({
           <p className="text-base text-gray-500 dark:text-gray-300 leading-relaxed mb-4">
             {CardInfo}
           </p>
+          <ButtonHref to="cta"
+                      spy={true}
+                      smooth={true}
+                      offset={-80}
+                      duration={500}
+                      className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+            {ButtonText}
+          </ButtonHref>
         </div>
       </div>
     </>

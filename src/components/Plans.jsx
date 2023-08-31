@@ -1,8 +1,7 @@
 import React from "react";
 import ReactCardCarousel from "react-card-carousel";
+import { Button as ButtonHref } from "./Button";
 
-// images
-import StudyingBg from "../resources/studying.jpg";
 
 const Plans = () => {
   return (
@@ -26,9 +25,7 @@ const Plans = () => {
           <div className="relative h-[500px] w-full xl:w-1/2 overflow-x-hidden px-0 sm:px-auto lg:w-6/12">
             <ReactCardCarousel autoplay={false}>
               <SingleCard
-                image={StudyingBg}
                 CardTitle="Практикант"
-                btnHref="/#"
                 CardDescription="По одному занятияю из каждой категории: консультация, игровое, развлекательное"
                 Extra="+ одно занятие на выбор"
                 ButtonText="Купить за 2290₽/нед"
@@ -36,18 +33,14 @@ const Plans = () => {
                 BestValue
               />
               <SingleCard
-                image={StudyingBg}
                 CardTitle="Начинающий"
-                btnHref="/#"
                 CardDescription="По одному занятияю из каждой категории: консультация, игровое, развлекательное"
                 Extra="+ одно занятие на выбор"
                 ButtonText="Купить за 2290₽/нед"
                 CardFooter="Подходит для всех учеников. Погрузись в языковую среду!"
               />
               <SingleCard
-                image={StudyingBg}
                 CardTitle="Олимпиадник"
-                btnHref="/#"
                 CardDescription="Три консультации с глубоким погружением в грамматику и лексику"
                 Extra="+ одно занятие на выбор"
                 ButtonText="Купить за 2290₽/нед"
@@ -64,16 +57,12 @@ const Plans = () => {
 export default Plans;
 
 const SingleCard = ({
-  image,
-  Button,
   CardDescription,
   CardTitle,
   CardFooter,
   Extra,
   BestValue,
   ButtonText,
-  titleHref,
-  btnHref,
 }) => {
   return (
     <>
@@ -99,9 +88,14 @@ const SingleCard = ({
           </h3>
           <p className="text-base leading-relaxed mb-1">{CardDescription}</p>
           <p className="text-base leading-relaxed mb-6">{Extra}</p>
-          <a className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+          <ButtonHref to="ctaplan"
+                      spy={true}
+                      smooth={true}
+                      offset={-80}
+                      duration={500}
+                      className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
             {ButtonText}
-          </a>
+          </ButtonHref>
           <p className="text-base text-gray-500 dark:text-gray-300 leading-relaxed mt-6">
             {CardFooter}
           </p>
