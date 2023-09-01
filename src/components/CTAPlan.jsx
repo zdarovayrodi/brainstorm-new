@@ -16,10 +16,6 @@ const CTAPlan = () => {
           width="100%"
           height="299px"
           id="chosenContact"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          scrollBar="hidden"
           title="Выберите тариф"
         />
       </div>

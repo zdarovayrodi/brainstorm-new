@@ -9,8 +9,8 @@ const NavBar = () => {
     }
     
     return (
-        <nav class="sticky top-0 bg-white dark:bg-gray-900 z-50">   
-            <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+        <nav className="sticky top-0 bg-white dark:bg-gray-900 z-50">
+            <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
                 <h1 className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white cursor-pointer'>
                     <Link to='hero' spy={true} smooth={true} offset={-80} duration={500}>
                         Brainstorm
@@ -24,8 +24,8 @@ const NavBar = () => {
                     <Link as='li' className='p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white mr-1' to='plans' spy={true} smooth={true} offset={-80} duration={500}>Наборы</Link>
                 </ul>
                 <div onClick={handleNav} className='lg:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                        <path className='stroke-black dark:stroke-white' stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path className='stroke-black dark:stroke-white' strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
                     </svg>
                 </div>
                 <div className={!nav ? 'hidden' : 'fixed top-[70px] right-4 ease-in-out duration-500'}>

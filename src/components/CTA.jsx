@@ -16,10 +16,6 @@ const CTA = () => {
           width="100%"
           id="contact"
           height="200px"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          scrollBar="hidden"
           title="Оставьте заявку, мы с Вами свяжемся"
         />
       </div>

@@ -32,8 +32,6 @@ const WhyLearn = () => {
                   className="flex-shrink-0 w-3.5 h-3.5 text-blue-500 dark:text-blue-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 12"
                 >
                   <BiConversation />
                 </span>
@@ -52,8 +50,6 @@ const WhyLearn = () => {
                   className="flex-shrink-0 w-3.5 h-3.5 text-blue-500 dark:text-blue-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 12"
                 >
                   <PiPopcornBold />
                 </span>
@@ -72,8 +68,6 @@ const WhyLearn = () => {
                   className="flex-shrink-0 w-3.5 h-3.5 text-blue-500 dark:text-blue-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 12"
                 >
                   <BsPuzzle />
                 </span>
@@ -92,8 +86,6 @@ const WhyLearn = () => {
                   className="flex-shrink-0 w-3.5 h-3.5 text-blue-500 dark:text-blue-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 12"
                 >
                   <FaTelegramPlane />
                 </span>
@@ -110,8 +102,6 @@ const WhyLearn = () => {
                   className="flex-shrink-0 w-3.5 h-3.5 text-blue-500 dark:text-blue-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 12"
                 >
                   <MdGroup />
                 </span>
@@ -138,8 +128,6 @@ const WhyLearn = () => {
                   className="flex-shrink-0 w-3.5 h-3.5 text-blue-500 dark:text-blue-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 12"
                 >
                   <MdMuseum />
                 </span>
@@ -156,8 +144,6 @@ const WhyLearn = () => {
                   className="flex-shrink-0 w-3.5 h-3.5 text-blue-500 dark:text-blue-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 12"
                 >
                   <BiSearchAlt />
                 </span>
@@ -175,8 +161,6 @@ const WhyLearn = () => {
                   className="flex-shrink-0 w-3.5 h-3.5 text-blue-500 dark:text-blue-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 12"
                 >
                   <BiBook />
                 </span>
@@ -193,8 +177,6 @@ const WhyLearn = () => {
                   className="flex-shrink-0 w-3.5 h-3.5 text-blue-500 dark:text-blue-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 12"
                 >
                   <BiRocket />
                 </span>
@@ -211,8 +193,6 @@ const WhyLearn = () => {
                   className="flex-shrink-0 w-3.5 h-3.5 text-blue-500 dark:text-blue-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 16 12"
                 >
                   <MdGroup />
                 </span>
