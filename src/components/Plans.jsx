@@ -26,8 +26,8 @@ const Plans = () => {
             <ReactCardCarousel autoplay={false}>
               <SingleCard
                 CardTitle="Практикант"
-                CardDescription="По одному занятияю из каждой категории: консультация, игровое, развлекательное"
-                Extra="+ одно занятие на выбор"
+                CardDescription="4 занятия в неделю: консультация, игровое, развлекательное"
+                Extra="+ развлекательное или игровое на выбор"
                 ButtonText="Купить за 2290₽/нед"
                 CardFooter="Подходит для учеников, которые желают больше практиковаться!"
                 BestValue
@@ -35,15 +35,14 @@ const Plans = () => {
               <SingleCard
                 CardTitle="Начинающий"
                 CardDescription="По одному занятияю из каждой категории: консультация, игровое, развлекательное"
-                Extra="+ одно занятие на выбор"
-                ButtonText="Купить за 2290₽/нед"
+                ButtonText="Купить за 1790₽/нед"
                 CardFooter="Подходит для всех учеников. Погрузись в языковую среду!"
               />
               <SingleCard
                 CardTitle="Олимпиадник"
                 CardDescription="Три консультации с глубоким погружением в грамматику и лексику"
                 Extra="+ одно занятие на выбор"
-                ButtonText="Купить за 2290₽/нед"
+                ButtonText="Купить за 2590₽/нед"
                 CardFooter="Подготовься к олимпиаде на отлично и получи БВИ в вузе!"
               />
             </ReactCardCarousel>
@@ -87,13 +86,14 @@ const SingleCard = ({
             {CardTitle}
           </h3>
           <p className="text-base leading-relaxed mb-1">{CardDescription}</p>
-          <p className="text-base leading-relaxed mb-6">{Extra}</p>
+          <p className={Extra ? "text-base leading-relaxed mb-6" : "hidden"}>{Extra}</p>
           <ButtonHref to="ctaplan"
                       spy={true}
                       smooth={true}
                       offset={-80}
                       duration={500}
-                      className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                      className={Extra ? "rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                                       : "mt-4 inline-block rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"}>
             {ButtonText}
           </ButtonHref>
           <p className="text-base text-gray-500 dark:text-gray-300 leading-relaxed mt-6">
