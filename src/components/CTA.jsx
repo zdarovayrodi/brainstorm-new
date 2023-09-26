@@ -15,7 +15,7 @@ const CTA = () => {
           loading="lazy"
           width="100%"
           id="contact"
-          height="200px"
+          height="279px"
           title="Оставьте заявку, мы с Вами свяжемся"
         />
       </div>
